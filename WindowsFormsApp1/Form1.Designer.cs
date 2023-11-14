@@ -1,14 +1,16 @@
-﻿namespace FaceBlurring
+﻿using System.Windows.Forms;
+
+namespace WindowsFormsApp1
 {
     partial class Form1
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,8 +25,8 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -52,7 +54,8 @@
             this.folderZObrazamiToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(686, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -69,21 +72,21 @@
             // załadujObrazToolStripMenuItem
             // 
             this.załadujObrazToolStripMenuItem.Name = "załadujObrazToolStripMenuItem";
-            this.załadujObrazToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.załadujObrazToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.załadujObrazToolStripMenuItem.Text = "Załaduj obraz";
             this.załadujObrazToolStripMenuItem.Click += new System.EventHandler(this.załadujObrazToolStripMenuItem_Click);
             // 
             // wymażTwarzeToolStripMenuItem
             // 
             this.wymażTwarzeToolStripMenuItem.Name = "wymażTwarzeToolStripMenuItem";
-            this.wymażTwarzeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.wymażTwarzeToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.wymażTwarzeToolStripMenuItem.Text = "Wymaż twarze";
             this.wymażTwarzeToolStripMenuItem.Click += new System.EventHandler(this.wymażTwarzeToolStripMenuItem_Click);
             // 
             // zapiszObrazToolStripMenuItem
             // 
             this.zapiszObrazToolStripMenuItem.Name = "zapiszObrazToolStripMenuItem";
-            this.zapiszObrazToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.zapiszObrazToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.zapiszObrazToolStripMenuItem.Text = "Zapisz obraz";
             // 
             // folderZObrazamiToolStripMenuItem
@@ -134,22 +137,22 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 21);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(800, 426);
+            this.pictureBox1.Size = new System.Drawing.Size(686, 369);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.Filter = "Image Files(*.jpg;*.jpeg;*.png;*.bmp)|(*.jpg;*.jpeg;*.png;*.bmp;)";
+            this.openFileDialog1.Filter = "Image Files(*.jpg;*.jpeg;*.png;*.bmp)|*.jpg;*.jpeg;*.png;*.bmp;";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(686, 390);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -179,4 +182,6 @@
         private PictureBox pictureBox1;
         private OpenFileDialog openFileDialog1;
     }
+
 }
+

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceBlurring", "FaceBlurring\FaceBlurring.csproj", "{FE961ABB-4331-4FA5-8998-61407CF5FFB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaceBlurring", "FaceBlurring\FaceBlurring.csproj", "{FE961ABB-4331-4FA5-8998-61407CF5FFB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{800FDE75-237F-47E4-B5B3-B51EEE1A369F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FE961ABB-4331-4FA5-8998-61407CF5FFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE961ABB-4331-4FA5-8998-61407CF5FFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE961ABB-4331-4FA5-8998-61407CF5FFB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{800FDE75-237F-47E4-B5B3-B51EEE1A369F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{800FDE75-237F-47E4-B5B3-B51EEE1A369F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{800FDE75-237F-47E4-B5B3-B51EEE1A369F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{800FDE75-237F-47E4-B5B3-B51EEE1A369F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
