@@ -43,6 +43,7 @@ namespace WindowsFormsApp1
             this.zapiszWszystkieObrazyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -72,22 +73,23 @@ namespace WindowsFormsApp1
             // załadujObrazToolStripMenuItem
             // 
             this.załadujObrazToolStripMenuItem.Name = "załadujObrazToolStripMenuItem";
-            this.załadujObrazToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.załadujObrazToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.załadujObrazToolStripMenuItem.Text = "Załaduj obraz";
             this.załadujObrazToolStripMenuItem.Click += new System.EventHandler(this.załadujObrazToolStripMenuItem_Click);
             // 
             // wymażTwarzeToolStripMenuItem
             // 
             this.wymażTwarzeToolStripMenuItem.Name = "wymażTwarzeToolStripMenuItem";
-            this.wymażTwarzeToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.wymażTwarzeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.wymażTwarzeToolStripMenuItem.Text = "Wymaż twarze";
             this.wymażTwarzeToolStripMenuItem.Click += new System.EventHandler(this.wymażTwarzeToolStripMenuItem_Click);
             // 
             // zapiszObrazToolStripMenuItem
             // 
             this.zapiszObrazToolStripMenuItem.Name = "zapiszObrazToolStripMenuItem";
-            this.zapiszObrazToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.zapiszObrazToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.zapiszObrazToolStripMenuItem.Text = "Zapisz obraz";
+            this.zapiszObrazToolStripMenuItem.Click += new System.EventHandler(this.zapiszObrazToolStripMenuItem_Click);
             // 
             // folderZObrazamiToolStripMenuItem
             // 
@@ -145,8 +147,11 @@ namespace WindowsFormsApp1
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "Image Files(*.jpg;*.jpeg;*.png;*.bmp)|*.jpg;*.jpeg;*.png;*.bmp;";
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.Filter = "JPeg Image|*.jpg;*.jpeg|Bitmap Image|*.bmp|PNG Image|*.png;";
             // 
             // Form1
             // 
@@ -181,6 +186,7 @@ namespace WindowsFormsApp1
         private ToolStripMenuItem zapiszWszystkieObrazyToolStripMenuItem;
         private PictureBox pictureBox1;
         private OpenFileDialog openFileDialog1;
+        private SaveFileDialog saveFileDialog1;
     }
 
 }

@@ -49,19 +49,29 @@ namespace WindowsFormsApp1
                 {
                     using (Graphics graphics = Graphics.FromImage(bitmap))
                     {
-                        using (SolidBrush brush = new SolidBrush(Color.Azure))
+                        using (SolidBrush brush = new SolidBrush(Color.Maroon))
                         {
                             graphics.FillRectangles(brush, rectangles);
                         }
-
-                   /*     using (Pen pen = new Pen(Color.Red, 5))
-                        {
-                            graphics.DrawRectangle(pen, rect);
-                        }*/
                     }
                 }
                 pictureBox1.BackgroundImage = bitmap;
             }
+        }
+
+        private void zapiszObrazToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.FileName = string.Empty;
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.BackgroundImage.Save(saveFileDialog1.FileName);
+            }
+
+            else
+            {
+                saveFileDialog1.Dispose();
+            }
+
         }
     }
 }
