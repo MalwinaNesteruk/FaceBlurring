@@ -73,5 +73,10 @@ namespace WindowsFormsApp1
             }
 
         }
+
+        private void załadujObrazyZFolderuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            multiImagesControl1.LoadPictures();
+        }
     }
 }

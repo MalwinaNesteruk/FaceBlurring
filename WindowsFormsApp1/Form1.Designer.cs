@@ -44,6 +44,7 @@ namespace WindowsFormsApp1
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.multiImagesControl1 = new FaceBlurring.MultiImagesControl();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +57,7 @@ namespace WindowsFormsApp1
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(686, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(984, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -73,21 +74,21 @@ namespace WindowsFormsApp1
             // załadujObrazToolStripMenuItem
             // 
             this.załadujObrazToolStripMenuItem.Name = "załadujObrazToolStripMenuItem";
-            this.załadujObrazToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.załadujObrazToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.załadujObrazToolStripMenuItem.Text = "Załaduj obraz";
             this.załadujObrazToolStripMenuItem.Click += new System.EventHandler(this.załadujObrazToolStripMenuItem_Click);
             // 
             // wymażTwarzeToolStripMenuItem
             // 
             this.wymażTwarzeToolStripMenuItem.Name = "wymażTwarzeToolStripMenuItem";
-            this.wymażTwarzeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.wymażTwarzeToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.wymażTwarzeToolStripMenuItem.Text = "Wymaż twarze";
             this.wymażTwarzeToolStripMenuItem.Click += new System.EventHandler(this.wymażTwarzeToolStripMenuItem_Click);
             // 
             // zapiszObrazToolStripMenuItem
             // 
             this.zapiszObrazToolStripMenuItem.Name = "zapiszObrazToolStripMenuItem";
-            this.zapiszObrazToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.zapiszObrazToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.zapiszObrazToolStripMenuItem.Text = "Zapisz obraz";
             this.zapiszObrazToolStripMenuItem.Click += new System.EventHandler(this.zapiszObrazToolStripMenuItem_Click);
             // 
@@ -108,6 +109,7 @@ namespace WindowsFormsApp1
             this.załadujObrazyZFolderuToolStripMenuItem.Name = "załadujObrazyZFolderuToolStripMenuItem";
             this.załadujObrazyZFolderuToolStripMenuItem.Size = new System.Drawing.Size(281, 22);
             this.załadujObrazyZFolderuToolStripMenuItem.Text = "Załaduj obrazy z folderu";
+            this.załadujObrazyZFolderuToolStripMenuItem.Click += new System.EventHandler(this.załadujObrazyZFolderuToolStripMenuItem_Click);
             // 
             // wymażTwarzeNaPojedynczymObrazieToolStripMenuItem
             // 
@@ -139,9 +141,9 @@ namespace WindowsFormsApp1
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(686, 369);
+            this.pictureBox1.Size = new System.Drawing.Size(984, 390);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -153,11 +155,19 @@ namespace WindowsFormsApp1
             // 
             this.saveFileDialog1.Filter = "JPeg Image|*.jpg;*.jpeg|Bitmap Image|*.bmp|PNG Image|*.png;";
             // 
+            // multiImagesControl1
+            // 
+            this.multiImagesControl1.Location = new System.Drawing.Point(0, 24);
+            this.multiImagesControl1.Name = "multiImagesControl1";
+            this.multiImagesControl1.Size = new System.Drawing.Size(984, 390);
+            this.multiImagesControl1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 390);
+            this.ClientSize = new System.Drawing.Size(984, 411);
+            this.Controls.Add(this.multiImagesControl1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -187,6 +197,7 @@ namespace WindowsFormsApp1
         private PictureBox pictureBox1;
         private OpenFileDialog openFileDialog1;
         private SaveFileDialog saveFileDialog1;
+        private FaceBlurring.MultiImagesControl multiImagesControl1;
     }
 
 }
